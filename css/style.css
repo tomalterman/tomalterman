@@ -1,0 +1,120 @@
+html {
+	height: 100%;
+	width:100%;
+	background-color: #141819;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;
+	display: box;
+	box-pack: center;
+	box-align: center;
+}
+
+body {
+	font:120%/1.5 'Trykker', serif;
+	color:#eaeaea;
+	color:rgb(226, 235, 237);
+	width:85%;
+	max-width: 32em;
+	margin: 1em auto 3em;
+	padding: 1em 2em;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
+	position: relative;
+	background-color: rgba(103, 128, 132, 0.1);
+}
+
+p {
+	margin: 1em 0;
+}
+
+a {
+	color: #a2bec2;
+	color: rgba(162, 190, 194, 0.8);
+	text-decoration: none;
+}
+
+a:hover{
+	color: #678084;
+	color: rgba(103, 128, 132, 0.8);
+}
+
+h1 {
+	font-size: 2.4em;
+	font-family: 'Belleza', sans-serif;
+}
+
+h1 a{
+		color: rgba(226, 235, 237,0.6);
+}
+
+.img{
+	width:8em;
+	min-height: 1px;
+}
+
+.img img{
+	width:100%;
+	-webkit-animation:pop-in 2s;
+	-moz-animation:pop-in 2s;
+	-ms-animation:pop-in 2s;
+	animation:pop-in 2s;
+}
+
+.logo{
+	position: absolute;
+	top: 8px;
+	left: 11px;
+	background: url("../img/lil_tom_46.png") no-repeat;
+	min-height: 56px;
+	line-height: 2.8em;
+}
+
+.logo a {
+	display: block;
+	padding-left: 54px;
+}
+
+.with-logo{
+	padding-top: 2.5em;
+}
+
+@-webkit-keyframes pop-in {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+@-moz-keyframes pop-in {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+@-ms-keyframes pop-in {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+@keyframes "pop-in" {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+
+@media all and (min-width: 28em){
+	body{
+		-webkit-box-shadow: 0px 1px 5px 1px rgb(103, 128, 132);
+		-moz-box-shadow: 0px 1px 5px 1px rgb(103, 128, 132);
+		box-shadow: 0px 1px 5px 1px rgb(103, 128, 132);
+	}
+}
+
+@media all and (min-width: 31em){
+	.media {margin:10px;}
+	.media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
+	.media .img {float:left; margin-right: 10px;}
+	.media .img img{display:block;}
+
+	.img{
+		width: 33%;
+	}
+}
